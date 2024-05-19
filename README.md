@@ -1,2 +1,3 @@
 # bert_hidden_staes
 转onnx模型时导出bert模型的中间层输出，如“hiddens_states", "last_hidden_state”, "attentions"
+我在一个tts项目中想要转换onnx模型并使用onnxruntime推理，而这个过程使用了bert模型的中间层输出进行加工处理，发现了这个方法可以成功将bert模型的以上几个特征保存到onnx的输出中，再通过onnxruntime的session.run跑出在python版本中相同的结果，精度有少量差异
